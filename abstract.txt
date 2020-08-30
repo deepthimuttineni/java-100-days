@@ -1,0 +1,42 @@
+//abstract methods
+
+
+package Pack1;
+
+abstract class Transport  /
+{
+	void Color()
+	{
+		System.out.println("red");
+	}
+	abstract int Wheels();  	
+}
+
+class Car extends Transport
+{
+	int Wheels()
+	{
+		return 4;
+	}
+}
+
+class Bike extends Transport
+{
+   int Wheels()
+   {
+	   return 2;
+   }
+}
+
+public class Abstractclass 
+{
+	public static void main(String[] args) 
+	{
+Car obj1 = new Car();
+obj1.Color();
+System.out.println("Car has " + obj1.Wheels()+ " wheels");
+
+Bike obj2 = new Byke();
+obj2.Color();
+System.out.println("bike has " + obj2.Wheels()+ " wheels");
+} }
